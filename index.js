@@ -1,31 +1,45 @@
-const row = 10;
-const cell = 10;
-const mine = 10;
-const CODE = {
+let row = 10;
+let cell = 10;
+let mine = 10;
+let data;
+let CODE = {
 
 }
 
-let data;
 
 
 
 function handleExecution() {
-    // const row = parseInt(document.querySelector(".row").value);
-    // const cell = parseInt(document.querySelector(".cell").value);
-    // const mine = parseInt(document.querySelector(".mine").value);
+    row = parseInt(document.querySelector(".row").value);
+    cell = parseInt(document.querySelector(".cell").value);
+    mine = parseInt(document.querySelector(".mine").value);
     
-    console.log(row, cell, mine);
-    const array = Array(row * cell).fill().map((arr,i) => {
-        return i;
-    })
 
-    console.log(array);
-    
+    data = Array(row * cell).fill().map((arr,i) => {
+        return i;
+    });
+
+    let maxNum = 25;
+    let minNum = 10;
+
+    console.log(Math.floor(Math.random() * (maxNum - minNum +1) + minNum));
 }
 
 
 
+
+
+
+
 // 1.배열을 25개 만든다.
+
+
+
+
+
+//.1-25 중 램덤으로 값을 5개 뽑아낸다.
+
+//
 
 
 
