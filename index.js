@@ -13,7 +13,6 @@ function handleExecution() {
     row = parseInt(document.querySelector(".row").value);
     cell = parseInt(document.querySelector(".cell").value);
     mine = parseInt(document.querySelector(".mine").value);
-    
 
     data = Array(row * cell).fill().map((arr,i) => {
         return i;
@@ -22,18 +21,9 @@ function handleExecution() {
     let maxNum = 25;
     let minNum = 10;
 
-    console.log(Math.floor(Math.random() * (maxNum - minNum +1) + minNum));
+    const mineData = Math.floor(Math.random() * (maxNum - minNum +1) + minNum);
+    
 }
-
-
-
-
-
-
-
-// 1.배열을 25개 만든다.
-
-
 
 
 
